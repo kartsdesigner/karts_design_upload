@@ -277,7 +277,7 @@ export default function Home() {
 
     useEffect(() => {
         const handleBeforeUnload = (event) => {
-          const message = '업로드중입니다. 페이지를 벗어날 경우 내용이 저장되지 않습니다. 정말로 떠나시겠습니까?';
+          const message = '페이지를 벗어날 경우 내용이 저장되지 않습니다. 정말로 떠나시겠습니까?';
           event.returnValue = message; // Standard for most browsers
           return message; // For some older browsers
         };

@@ -27,6 +27,7 @@ export default function Home() {
     const [webLink,setWebLink] = useState('');
     const [vimeoLink,setVimeoLink] = useState('');
     const [studentId,setStudentId]=useState('');
+    const [exhibitionYear, setExhibitionYear]=useState(0);
     const [uploading, setUploading] = useState(false);
 
     const {uploadPage}=pageStore();
@@ -100,6 +101,7 @@ export default function Home() {
 
             const entry = await environment.createEntry('portfolio',{
                 fields: {
+                  exhibitionYear:{'en-US' : formData.exhibitionYear},
                   studentid: { 'en-US': formData.studentId },
                   projectName: { 'en-US': formData.projectName },
                   nameKr: { 'en-US': formData.nameKr },
@@ -156,6 +158,7 @@ export default function Home() {
         }
       };
 
+
     const handleFormSubmit = async(e) => {
         e.preventDefault();
 
@@ -185,6 +188,7 @@ export default function Home() {
             topEmbed,
             works,
             bottomEmbed,
+            exhibitionYear,
             // ... add other fields as needed
           };
       
@@ -276,6 +280,10 @@ export default function Home() {
     };
 
     useEffect(() => {
+
+        const currentYear = new Date().getFullYear();
+        setExhibitionYear(currentYear);
+
         const handleBeforeUnload = (event) => {
           const message = '페이지를 벗어날 경우 내용이 저장되지 않습니다. 정말로 떠나시겠습니까?';
           event.returnValue = message; // Standard for most browsers

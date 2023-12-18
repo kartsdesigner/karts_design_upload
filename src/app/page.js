@@ -159,7 +159,7 @@ export default function Home() {
     const handleFormSubmit = async(e) => {
         e.preventDefault();
 
-        window.alert('업로드하시겠습니까?... 업로드가 시작되면 완료창이 뜰때까지 페이지를 나가지 말아주세요');
+        window.alert('업로드하시겠습니까? 업로드가 시작되면 완료창이 뜰때까지 브라우저를 닫지 말아주세요');
         setUploading(true);
 
         const formData = {
@@ -463,7 +463,7 @@ export default function Home() {
                   </div>
               </section>
               <input type="submit" value={'upload'}/>
-              {uploading&&(<h3>업로드 중입니다... 업로드가 완료될때까지 페이지를 나가지 말아주세요.</h3>)}
+              {uploading&&(<h3>업로드 중입니다... 업로드가 완료될때까지 브라우저를 닫지 말아주세요.</h3>)}
           </form>):(
           <div>
               업로드 기간이 아닙니다.

@@ -339,7 +339,7 @@ export default function Home() {
                       </ul>
                   </div>
                   <div><span style={{color:'red'}}>
-                      * 입력란에 design type을 입력한 후 'Enter'를 눌러야 적용이 됩니다.</span></div>
+                      * 입력란에 design type을 입력한 후 &apos;Enter&apos;를 눌러야 적용이 됩니다.</span></div>
                   <div>
                       <h4>Statement-Kr</h4><br/>
                       <textarea placeholder="프로젝트 설명 - 한글" required  value={statementKr} onChange={(e)=>setStatementKr(e.target.value)} className="statement"/>
@@ -349,7 +349,7 @@ export default function Home() {
                       <textarea placeholder="프로젝트 설명 - 영문" required value={statementEng} onChange={(e)=>setStatementEng(e.target.value)} className="statement"/>
                   </div>
                   <div><span style={{color:'red'}}>
-                      * 문단은 '줄바꿈 한번'으로 구분해주세요.</span></div>
+                      * 문단은 &apos;줄바꿈 한번&apos;으로 구분해주세요.</span></div>
               </section>
               <section>
                   <h2>media</h2>
@@ -391,7 +391,7 @@ export default function Home() {
                   </div>
                   <div>
                       <h4>works</h4>
-                      <span>(프로젝트 상세 이미지 - 이미지 개수 제한 없음, gif가능)</span><br/>
+                      <span>( 프로젝트 상세 이미지 - 이미지 개수 제한 없음, gif가능, 첨부한 순으로 업로드됩니다.)</span><br/>
                       <input type="file" required accept="image/*" onChange={handleImageChange} multiple />
                       {works.length > 0 && (
                           <div>
@@ -434,11 +434,11 @@ export default function Home() {
                   <h2>디자이너 정보</h2>
                   <div>
                       <h4>introduce-kr</h4>
-                      <textarea placeholder="디자이너 소개 - 한글 (00자)" required value={introductionKr} onChange={(e)=>setIntroductionKr(e.target.value)}/>
+                      <textarea placeholder="디자이너 소개 - 한글" required value={introductionKr} onChange={(e)=>setIntroductionKr(e.target.value)}/>
                   </div>
                   <div>
                       <h4>introduce-Eng</h4>
-                      <textarea placeholder="디자이너 소개 - 영문 (00자)" required value={introductionEng} onChange={(e)=>setIntroductionEng(e.target.value)}/>
+                      <textarea placeholder="디자이너 소개 - 영문" required value={introductionEng} onChange={(e)=>setIntroductionEng(e.target.value)}/>
                   </div>
                   <div>
                       <h4>Email</h4>

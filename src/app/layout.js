@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html >
       <body>
-        <h1><Image src="karts_logo_simple.svg" alt='kartslogo' width={34} height={32}></Image>
+        <h1><Image src="karts_logo_simple.svg" alt="kartslogo" width={34} height={32}></Image>
           한국예술종합학교 졸업 전시 웹사이트 프로젝트 업로드</h1>
         {children}
       </body>

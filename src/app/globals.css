@@ -1,0 +1,66 @@
+/*upload*/
+body{
+    padding: 30px;
+}
+body img{
+    margin-right: 10px;
+}
+.upload{
+    margin-top: 50px;
+    padding: 20px;
+    padding-bottom: 80px;
+  }
+  h4{display: inline; margin-right: 15px;}
+  input{margin-left: 5px;}
+  .upload section{border-bottom: 1px rgba(0, 0, 0, 0.2) solid;}
+  .upload section div{margin: 15px;}
+  .upload section ul{list-style: none;}
+  .upload section ul li{
+    display: inline;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .upload section button{padding: 2px; background-color: transparent; border: none; margin-left: 10px; font-size: 11px;}
+  .upload section span{font-size: 12px; color: rgba(0, 0, 0, 0.5);}
+  textarea{width: 200px;}
+  form > input{margin-left: 50%; transform: translate(-50%); margin-bottom: 50px; margin-top: 20px;}
+  .toggle{
+    width: 25px;
+    height: 13px;
+    border-radius: 30px;
+    padding: 1.5px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .toggle .button{
+    margin-top: 0.65px;
+    margin-left: 0.5px;
+    width: 11.3px;
+    height: 11.3px;
+    background-color: #FFF;
+    border-radius: 50%;
+  
+  }
+  .togglebutton{
+    width: 90px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .on{
+    transform: translateX(12.5px);
+  }
+  .pageOff{display: none;}
+  .active{background-color: rgb(59, 151, 244)}
+  .upload h3{
+    color: red;
+    font-weight: bold;
+    text-align: center;
+  }
+  .upload .statement{
+    width: 400px;
+    height: 200px;
+    margin-top: 10px;
+  }
+  

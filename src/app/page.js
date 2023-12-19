@@ -142,9 +142,13 @@ export default function Home() {
 
               //await entry.publish();
 
-              console.log('Contentful entry created successfully. Entry ID:', entryId);
+            //   console.log('Contentful entry created successfully. Entry ID:', entryId);
+            setUploading(false);
+            window.alert("업로드가 완료됐습니다.");
         } catch(error){
             console.log('error is...',error);
+            setUploading(false);
+            window.alert("업로드 실패");
         }
     };
 
@@ -198,8 +202,6 @@ export default function Home() {
         // Create Contentful entry
         await createContentfulEntry(formData);
 
-        setUploading(false);
-        window.alert("업로드가 완료됐습니다.");
     };
 
     const handleInputChange = (e) => {

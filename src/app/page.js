@@ -31,7 +31,7 @@ export default function Home() {
     const [uploading, setUploading] = useState(false);
 
     const {uploadPage, fetchPageData}=pageStore();
-    // fetchPageData();
+    fetchPageData();
 
     console.log(uploadPage);
 
@@ -285,7 +285,7 @@ export default function Home() {
     };
 
     useEffect(() => {
-        fetchPageData();
+        // fetchPageData();
 
         const currentYear = new Date().getFullYear();
         setExhibitionYear(currentYear);

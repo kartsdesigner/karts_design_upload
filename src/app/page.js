@@ -30,7 +30,8 @@ export default function Home() {
     const [exhibitionYear, setExhibitionYear]=useState(0);
     const [uploading, setUploading] = useState(false);
 
-    const {uploadPage}=pageStore();
+    const {uploadPage, fetchPageData}=pageStore();
+    console.log(uploadPage);
 
     const spaceId = process.env.NEXT_PUBLIC_SPACE_ID;
     const cmaToken = process.env.NEXT_PUBLIC_MANAGEMENT_API_TOKEN;
@@ -280,6 +281,7 @@ export default function Home() {
     };
 
     useEffect(() => {
+        fetchPageData();
 
         const currentYear = new Date().getFullYear();
         setExhibitionYear(currentYear);

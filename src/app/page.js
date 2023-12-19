@@ -274,7 +274,7 @@ export default function Home() {
     };
 
     const handleRemoveImage = (index) => {
-        const newImages = [...Works];
+        const newImages = [...works];
         newImages.splice(index, 1);
         setWorks(newImages);
     };

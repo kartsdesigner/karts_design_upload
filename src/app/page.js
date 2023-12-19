@@ -31,6 +31,8 @@ export default function Home() {
     const [uploading, setUploading] = useState(false);
 
     const {uploadPage, fetchPageData}=pageStore();
+    // fetchPageData();
+
     console.log(uploadPage);
 
     const spaceId = process.env.NEXT_PUBLIC_SPACE_ID;
@@ -303,7 +305,7 @@ export default function Home() {
   return (
       <div className="upload">
           {uploadPage?(<form onSubmit={handleFormSubmit}>
-            <h1>....{uploadPage}</h1>
+            {uploadPage?(<h1>true</h1>):(<h1>false</h2>)}
             <div>*업로드된 내용은 웹사이트에 바로 반영되지 않습니다. 업로드 후 관리자가 확인 후 publish로 변경해야 사이트에 반영이 됩니다.</div>
               <section>
                   <h2>프로젝트 정보</h2>
